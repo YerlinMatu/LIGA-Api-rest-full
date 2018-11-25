@@ -1,0 +1,38 @@
+{
+  "name": "jugadores",
+  "plural": "jugadores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "edad": {
+      "type": "number",
+      "required": true
+    },
+    "apodo": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "string",
+      "required": true
+    },
+    "posicion": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

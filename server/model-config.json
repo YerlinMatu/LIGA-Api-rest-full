@@ -38,5 +38,9 @@
   "equipo": {
     "dataSource": "data_mongodb",
     "public": true
+  },
+  "jugadores": {
+    "dataSource": "data_mongodb",
+    "public": true
   }
 }
