@@ -1,0 +1,20 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "equipo": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "equipo": {
+      "1": "{\"nombre\":\"Bulls\",\"logo\":\"imagen\",\"estado\":true,\"jugadores\":[],\"id\":1}"
+    }
+  }
+}
