@@ -1,6 +1,6 @@
 {
-  "name": "equipo",
-  "plural": "equipos",
+  "name": "jugador",
+  "plural": "jugadores",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,21 +11,27 @@
       "type": "string",
       "required": true
     },
-    "logo": {
+    "edad": {
+      "type": "number",
+      "required": true
+    },
+    "apodo": {
+      "type": "string"
+    },
+    "foto": {
       "type": "string",
       "required": true
+    },
+    "pocision": {
+      "type": "string"
     },
     "estado": {
       "type": "boolean",
       "default": true
     },
-    "jugadores": {
-      "type": [
-        "string"
-      ]
-    },
-    "updated": {
-      "type": "date"
+    "tipo": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],

@@ -42,5 +42,9 @@
   "jugadores": {
     "dataSource": "data_mongodb",
     "public": true
+  },
+  "jugador": {
+    "dataSource": "data_mongodb",
+    "public": true
   }
 }
