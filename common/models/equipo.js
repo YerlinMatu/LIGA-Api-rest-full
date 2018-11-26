@@ -3,10 +3,14 @@
 module.exports = function(Equipo) {
   Equipo.jugadores = function (idEquipo, idJugador, cb) {
     Equipo.findById(idEquipo, (err, equipo) => {
-      equipo.jugadores.push(idJugador);
-      equipo.updateAttribute('jugadores', equipo.jugadores, (err, equipo) => {
-        cb(null, equipo);
-      });
+      if (equipo.jugadores.some(jugador => jugador === idJugador)) {
+        cb('Jugador existente', null);
+      } else {
+        equipo.jugadores.push(idJugador);
+        equipo.updateAttribute('jugadores', equipo.jugadores, (err, equipo) => {
+          cb(null, equipo);
+        });
+      }
     })
   }
 
